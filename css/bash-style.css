@@ -32,18 +32,24 @@ img {border: 0;}
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
+	background: rgba(246,235,163,1) url('../img/bash-heart2.png') fixed center no-repeat;
+	background-size: cover;
+	font-size: 62.5%;
 }
 
-a:link, a:visited {
+a:link {
 	list-style-type: none;
 	text-decoration: none;
-	color: rgba(0,0,0,1);
+	color: rgba(246,235,163,1);
+}
+
+a:visited {
+	color: rgba(227,126,161,1);
 }
 
 a:hover {
 	color: rgba(255,255,255,1);
 	padding: 5px;
-	background: black;
 }
 
 a:active {
@@ -51,11 +57,9 @@ a:active {
 }
 
 .container {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
-
-/* ========== End Global Styles ==========*/
 
 .throw {
 	position: absolute;
@@ -67,12 +71,68 @@ a:active {
 	display: none;
 }
 
-p {
-	padding-top: 10px;
+/* ========== End Global Styles ==========*/
+
+.mainHeader {
+	width: 40%;
+	height: 100%;
+	font-size: 1.5em;
+	text-align: center;
+	background: rgba(64,36,45,0.8);
+	margin-left: 5em;
+	margin-right: 2em;
+	margin-top: 5em;
+	border-radius: .5em;
 }
 
-.heartImg{
-  shape-outside: url("../img/heart.png");
-  shape-image-threshold: 0.4;
-  float: left;
+.mainHeader h1 {
+	font-size: 2em;
+	color: rgba(227,126,161,1);
+	text-align: center;
+}
+
+.mainHeader nav {
+	margin-top: 2em;
+}
+
+.mainHeader nav ul li {
+	padding: 1em;
+	border-radius: .4em;
+}
+
+p {
+	padding-top: 1em;
+}
+
+.mainContent {
+	background: rgba(196,128,150,0.8);
+	color: rgba(255,255,255,1);
+	border-radius: .5em;
+}
+
+.mainContent p {
+	padding: 1em 5em;
+	font-size: 1.5em;
+	line-height: 1.6em;
+}
+
+
+
+.mainContent h2 {
+	padding-top: 5em;
+}
+
+footer {
+	width: 100%;
+	margin-top: 1em;
+	background: rgba(196,128,150,0.8);
+	text-align: center;
+	padding: .5em;
+	border-radius: .5em;
+}
+
+footer a:link {
+	font-size: 1.5em;
+	text-align: center;
+	color: rgba(64,36,45,1);
 }
